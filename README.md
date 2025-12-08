@@ -1,2 +1,1 @@
-# tetcollective.github.io
-Topology &amp; Entanglement Research – Simon Soliman
+Vedi il sito principale: https://tetcollective.org
