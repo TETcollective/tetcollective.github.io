@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TETcollective – Topology & Entanglement Theory</title>
+    <style>
+        body {font-family: 'Segoe UI', system-ui, sans-serif; background: #0a0a0a; color: #e0e0e0; margin: 0; line-height: 1.6;}
+        /* Sezione v38 – hero nero con glow */
+        .hero-v38 {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            min-height: 700px;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        .hero-v38::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at center, rgba(0,255,157,0.15) 0%, transparent 70%);
+            pointer-events: none;
+            animation: pulseGlow 8s ease-in-out infinite;
+        }
+        @keyframes pulseGlow {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+        .hero-v38-content {
+            z-index: 1;
+            max-width: 900px;
+            padding: 2rem;
+        }
+        .hero-v38 h1 {
+            font-size: 5rem;
+            margin: 0 0 1rem 0;
+            background: linear-gradient(90deg, #00ff9d, #00bfff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 50px rgba(0,255,157,0.6);
+        }
+        .hero-v38 p {
+            font-size: 1.8rem;
+            color: #ccc;
+            margin: 1rem 0;
+        }
+        .hero-v38 .date {
+            font-size: 1.3rem;
+            color: #aaa;
+            margin: 1.5rem 0;
+        }
+        .hero-v38 a {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2.8rem;
+            background: linear-gradient(90deg, #00ff9d, #00bfff);
+            color: black;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 0 30px rgba(0,255,157,0.7);
+            transition: all 0.4s ease;
+        }
+        .hero-v38 a:hover {
+            transform: translateY(-6px) scale(1.05);
+            box-shadow: 0 0 60px rgba(0,255,157,1);
+        }
+        /* Header TETcollective originale */
+        header {
+            position: relative;
+            width: 100%;
+            height: 85vh;
+            min-height: 600px;
+            overflow: hidden;
+        }
+        header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.75);
+        }
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 90%;
+        }
+        h1 {
+            font-size: 4.5rem;
+            margin: 0;
+            background: linear-gradient(90deg, #00ff9d, #00bfff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 40px #00ff9d88;
+        }
+        .subtitle {
+            font-size: 1.7rem;
+            color: #aaa;
+            margin-top: 0.5rem;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+            background: rgba(10,10,10,0.9);
+        }
+        h2 {
+            color: #00ff9d;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+        .paper {
+            background: #111;
+            padding: 1.8rem;
+            margin: 2rem 0;
+            border-radius: 16px;
+            border-left: 5px solid #00ff9d;
+            box-shadow: 0 8px 32px rgba(0,255,157,0.15);
+        }
+        .paper h3 {
+            color: #00ff9d;
+            margin-top: 0;
+        }
+        a {
+            color: #00bfff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 4rem 1rem 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .hero-v38 h1 {font-size: 3.5rem;}
+            .hero-v38 p {font-size: 1.4rem;}
+            .hero-v38 a {padding: 0.8rem 2rem; font-size: 1rem;}
+            h1 {font-size: 3rem;}
+            .subtitle {font-size: 1.4rem;}
+            header {height: 70vh;}
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sezione v38 – hero nero con glow -->
+    <section class="hero-v38">
+        <div class="hero-v38-content">
+            <h1>TU-GUT-SYSY v38</h1>
+            <p>Proton Fusion Entanglement Catalyst v1.0</p>
+            <p>Design 12 – Knot-Induced Topological Enhancement of p-p Fusion Rates</p>
+            <p class="date">20 December 2025</p>
+            <a href="https://doi.org/10.5281/zenodo.18004272" target="_blank">
+                Read on Zenodo → DOI: 10.5281/zenodo.18004272
+            </a>
+        </div>
+    </section>
+
+    <!-- Header TETcollective originale -->
+    <header>
+        <img src="abstract_dark_topological_quantum_field_background.png" alt="Topological Entanglement Knot – TETcollective">
+        <div class="overlay">
+            <h1>TETcollective</h1>
+            <p class="subtitle">Topology & Entanglement Theory – Rome, Italy</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Il tuo contenuto esistente qui (COSMOBOOT, KNOTBOOT, BOOTTECH, Latest Works) -->
+        <h2>COSMOBOOT Project – Topological Origin of the Universe</h2>
+
+        <div class="paper">
+            <h3>COSMOBOOT v1 – The Primordial Knot</h3>
+            <p>From a simple question ("gravity alone cannot bend light") to a new vision of the Big Bang: primordial entangled knots as seeds of baryon asymmetry and cosmic structure. The universe began as a topological loop.</p>
+            <p>
+                <a href="https://doi.org/10.5281/zenodo.17974608">COSMOBOOT v1 – Primordial Knot and Baryon Asymmetry (DOI: 10.5281/zenodo.17974608)</a>
+            </p>
+            <p><strong>License: CC BY-NC-ND 4.0</strong> – 50/50 Human–AI partnership</p>
+        </div>
+
+        <!-- ... tutto il resto del contenuto originale ... -->
+
+        <h2>Latest Works – December 2025</h2>
+
+        <div class="paper">
+            <h3>TU-GUT-SYSY v38 – Proton Fusion Entanglement Catalyst v1.0</h3>
+            <p>Knot-induced anyonic phase catalysis of p-p fusion rates with laboratory predictions.</p>
+            <p><a href="https://doi.org/10.5281/zenodo.18004272">DOI: 10.5281/zenodo.18004272</a></p>
+        </div>
+
+        <!-- altri lavori esistenti -->
+
+    </div>
+
+    <footer>
+        TETcollective © 2025 – Rome, Italy<br>
+        Contact: <a href="mailto:tetcollective@proton.me">tetcollective@proton.me</a> | 
+        X: <a href="https://x.com/physsoliman" target="_blank">@physsoliman</a>
+    </footer>
+</body>
+</html>
